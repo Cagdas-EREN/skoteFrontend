@@ -1,0 +1,134 @@
+﻿@{
+    ViewData["Title"] = "Sipariş Ekle";
+    Layout = "~/Views/_Shared/Layouts/_layout_horizontal.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+
+                <h2 class="card-title">Sipariş Oluştur</h2>
+
+                <div class="mb-3 row">
+                    <label class="col-md-2 col-form-label">Müşteri</label>
+                    <div class="col-md-10">
+                        <select class="form-select">
+                            <option>Müştteri Seç</option>
+                            <option>Fink Haberleşme</option>
+                            <option>Fink Telekominikasyon</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label class="col-md-2 col-form-label">Ürün Grubu</label>
+                    <div class="col-md-10">
+                        <select class="form-select">
+                            <option>Ürün Seç</option>
+                            <option>SMS Paket</option>
+                            <option>Yazılım</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="example-text-input" class="col-md-2 col-form-label">Adınız Soyadınız</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="text" value="Adınız Soyadınız"
+                               id="example-text-input">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="example-date-input" class="col-md-2 col-form-label">Doğum Tarihi</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="date" value="2019-08-19"
+                               id="example-date-input">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="example-text-input" class="col-md-2 col-form-label">T.C Kimlik No</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="text" value="T.C Kimlik No"
+                               id="example-text-input">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label class="col-md-2 col-form-label">Ürün / Hizmet</label>
+                    <div class="col-md-10">
+                        <select class="form-select">
+                            <option>Ürün / Hizmet Seç</option>
+                            <option>1.000 SMS</option>
+                            <option>3.000 SMS</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label class="col-md-2 col-form-label">Fiyatlandırma</label>
+                    <div class="col-lg-5">
+                        <div class="mb-4">
+                            <input type="text" class="form-control" id="formrow-inputCity" placeholder="Tutar">
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="mb-3">
+                            <select id="formrow-inputState" class="form-select">
+                                <option selected>Türk Lirası (TRY)</option>
+                                <option>US Dolar (USD)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label class="col-md-2 col-form-label">Sipariş Durumu</label>
+                    <div class="col-md-10">
+                        <select class="form-select">
+                            <option>Sipariş Durumu</option>
+                            <option>Onay Bekliyor</option>
+                            <option>Aktif</option>
+                        </select>
+                    </div>
+                </div>
+                 <div class="mb-3">
+                    <label class="col-md-2 col-form-label">Fatura</label>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Ödendi</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Ödenmedi</label>
+                                </div>
+                            </div>
+                <div class="mb-3 row">
+                    <label class="col-md-2 col-form-label"></label>
+                    <div class="col-lg-5">
+                        
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="d-grid gap-2">
+                            <button type="button" class="btn btn-primary btn-lg waves-effect waves-light">Oluştur</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div> <!-- end col -->
+
+    </div>
+</div>
+<!-- end row -->
+<!-- end row -->
+<!-- JAVASCRIPT -->
+<script src="~/assets/libs/jquery/jquery.min.js"></script>
+<script src="~/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/assets/libs/metismenu/metisMenu.min.js"></script>
+<script src="~/assets/libs/simplebar/simplebar.min.js"></script>
+<script src="~/assets/libs/node-waves/waves.min.js"></script>
+
+<script src="~/assets/js/app.js"></script>
+
+
+

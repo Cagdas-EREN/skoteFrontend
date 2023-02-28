@@ -1,0 +1,122 @@
+﻿@{
+    ViewData["Title"] = "Fatura Oluştur";
+    Layout = "~/Views/_Shared/Layouts/_layout_horizontal.cshtml";
+}
+
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+
+                <h2 class="card-title">Fatura Oluştur</h2>
+                <hr />
+
+                <div class="mb-3 row">
+                    <label class="col-md-2 col-form-label">Müşteri</label>
+                    <div class="col-md-10">
+                        <select class="form-select">
+                            <option>Müştteri Seç</option>
+                            <option>Fink Haberleşme</option>
+                            <option>Fink Telekominikasyon</option>
+                        </select>
+                    </div>
+                </div>
+                <hr />
+                <div class="mb-3">
+                    <label class="col-md-2 col-form-label">Fatura</label>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Ödendi</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Ödenmedi</label>
+                    </div>
+                </div>
+                <hr />
+                <div class="mb-3 row">
+                    <label class="col-md-2 col-form-label">Oluşturma Tarihi</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="datetime-local" value="2019-08-19T13:45:00"
+                               id="example-datetime-local-input">
+                    </div>
+                </div>
+                <hr />
+                <div class="mb-3 row">
+                    <label class="col-md-2 col-form-label">Son Ödeme Tarihi</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="datetime-local" value="2019-08-19T13:45:00"
+                               id="example-datetime-local-input">
+                    </div>
+                </div>
+                <hr />
+                <div class="mb-3 row">
+                    <label class="col-md-2 col-form-label">Para Birimi</label>
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <select id="formrow-inputState" class="form-select">
+                                <option selected>Türk Lirası (TRY)</option>
+                                <option>US Dolar (USD)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="mb-3 row">
+                    <label class="col-md-2 col-form-label">Tutar</label>
+                    <div class="col-lg-5">
+                        <div class="mb-4">
+                            <input type="text" class="form-control" id="formrow-inputCity" placeholder="Açıklama">
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="mb-3">
+                            <input id="input-currency" class="form-control input-mask text-start" placeholder="Tutar" data-inputmask="'alias': 'numeric', 'groupSeparator': ',', 'digits': 2, 'digitsOptional': false, 'prefix': '₺ ', 'placeholder': '0'">
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="mb-3 row">
+                    <label class="col-md-2 col-form-label"></label>
+                    <div class="col-lg-5">
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="d-grid gap-2">
+                            <button type="button" class="btn btn-primary btn-lg waves-effect waves-light">Oluştur</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div> <!-- end col -->
+
+    </div>
+</div>
+<!-- end row -->
+<!-- end row -->
+<!-- JAVASCRIPT -->
+<script src="~/assets/libs/jquery/jquery.min.js"></script>
+<script src="~/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/assets/libs/metismenu/metisMenu.min.js"></script>
+<script src="~/assets/libs/simplebar/simplebar.min.js"></script>
+<script src="~/assets/libs/node-waves/waves.min.js"></script>
+
+<script src="~/assets/js/app.js"></script>
+
+<!-- form mask -->
+<script src="~/assets/libs/inputmask/min/jquery.inputmask.bundle.min.js"></script>
+
+<!-- form mask init -->
+<script src="~/assets/js/pages/form-mask.init.js"></script>
+
+
+
+
+
+
+
+
